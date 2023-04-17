@@ -20,6 +20,10 @@ A custom commands plugin for >|||>Fish servers.
 
 `/survival` switch to the survival server.
 
+`/pvp` switch to the pvp server.
+
+`/sandbox` switch to the sandbox server.
+
 `/ohno` spawns an ohno unit.
 
 `/help [pageNumber/mod/admin/member]` shows our custom help page.
