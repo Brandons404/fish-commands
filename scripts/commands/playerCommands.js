@@ -188,6 +188,32 @@ const registerCommands = (clientCommands, runner) => {
       Call.connect(realP.con, '170.187.144.235', '6567');
     })
   );
+  
+    // pvp
+  clientCommands.register(
+    'pvp',
+    'switch to the pvp server.',
+    runner((args, realP) => {
+      Call.sendMessage(
+        realP.name + 
+          '[magenta] has gone to the pvp server. Use [Cyan]/pvp [magenta]to join them!'
+      );
+      Call.connect(realP.con, '162.248.100.133');
+    })
+  );
+  
+  // sandbox
+  clientCommands.register(
+    'sandbox',
+    'switch to the sandbox server.',
+    runner((args, realP) => {
+      Call.sendMessage(
+        realP.name + 
+          '[magenta] has gone to the sandbox server. Use [Cyan]/sandbox [magenta]to join them!'
+      );
+      Call.connect(realP.con, '162.248.102.204');
+    })
+  );
 
   // help
   clientCommands.register(
